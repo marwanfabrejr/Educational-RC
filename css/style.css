@@ -1,0 +1,151 @@
+/* Header Starts Here */
+.header {
+  height: 13%;
+  padding: 0 !important;
+  overflow: hidden;
+  width: 100%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+}
+
+.header .question {
+  width: 95%;
+  display: inline-block;
+  margin: 1%;
+  position: relative;
+  min-height: 1px;
+  padding: 0 0.02%;
+}
+
+.header .right {
+  float: right;
+}
+/* Header Starts Here */
+
+/* Content Starts Here */
+.slide {
+  text-align: center;
+  position: absolute;
+  transition: var(--transition);
+}
+
+.slide img {
+  float: none !important;
+  margin: 0 auto;
+  display: block;
+  max-width: 75%;
+  height: auto;
+  border: 0;
+}
+
+.questionOne {
+  position: relative;
+  margin-bottom: 2%;
+}
+
+.slide span {
+  color: #fff;
+  background-color: var(--background-color);
+  padding: 1% 1%;
+  border-radius: 12%;
+  cursor: pointer;
+}
+
+.questionTwo {
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+
+.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.lastSlide {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+.nextSlide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.slide h1 {
+  display: inline;
+}
+
+.slide .correct,
+.slide .incorrect {
+  display: none;
+  float: right;
+  font-size: 2vw;
+}
+
+#dummyPhoto,
+#help {
+  position: absolute;
+  width: 58%;
+  z-index: 2;
+  height: 70%;
+  margin-left: 3%;
+  margin-top: 1%;
+  display: none;
+}
+
+.dummyImg {
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+/* Content Ends Here */
+
+/* Footer Starts Here */
+.footer {
+  height: 13%;
+  overflow: hidden;
+  padding-top: 1%;
+  margin-top: -0.15%;
+  background-color: var(--footer-color);
+  width: 100%;
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding: 0 0.02%;
+  margin-left: 2%;
+}
+
+.footer .space {
+  display: inline-block;
+  width: 26%;
+  margin: 1%;
+}
+
+.footer .specialBox {
+  display: inline-block;
+  width: 10%;
+  margin: 1%;
+}
+
+.footer .pageCounter {
+  text-align: center;
+  width: 13%;
+  height: 65%;
+  margin: 2%;
+  display: inline-block;
+}
+.footer .pageCounter .counter {
+  background-color: #fff;
+  height: 100%;
+  font-weight: bold;
+  border-radius: 10%;
+  border-color: #0fa0c5;
+  border-style: solid;
+  font-size: 1.5vw;
+  padding: 10%;
+  border-width: 0.2vw;
+}
+
+/* Footer Ends Here */

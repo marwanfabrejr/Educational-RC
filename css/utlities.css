@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+:root {
+  --text-color: #000;
+  --background-color: #0fa0c5;
+  --border-color: #f5821f;
+  --footer-color: #deecf6;
+  --main-font: 'Nunito', sans-serif;
+  --transition: all 0.3s linear;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  font-size: 1vw;
+  line-height: 1.1;
+  font-weight: 500;
+  font-family: var(--main-font);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* #preloader {
+  background: #fff url(/img/Preloader_2.gif) no-repeat center;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 99999;
+} */
+
+#container {
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.pageContent {
+  position: absolute;
+  transition: all 1000ms ease-in-out !important;
+  transform-origin: top left;
+  height: 100vh;
+  width: 100vw;
+}
+
+.contentContainer {
+  padding: 0 !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  max-width: 65vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.sectionContainer {
+  padding: 0 2%;
+  width: 100%;
+  float: left;
+  height: 74%;
+  min-height: 1px;
+}
+
+.sectionBackground {
+  height: 74%;
+  position: absolute;
+  width: 63.7%;
+  background-color: var(--background-color);
+  float: left;
+  min-height: 1px;
+  padding: 0 2%;
+}
+
+.sectionContent {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 4%;
+  border-image: none;
+  border-color: var(--border-color);
+  border-style: solid;
+  border-width: 0.3vw;
+  z-index: 1;
+  padding: 1% 2%;
+  position: relative;
+  width: 98%;
+  float: left;
+  min-height: 1px;
+  margin-left: 2%;
+}
+
+.box {
+  margin: 1% 0 1% 2%;
+  display: inline-block;
+  width: 8%;
+}
+
+.noPointer {
+  cursor: auto;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.pointer img,
+.noPointer img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.halfOpacity {
+  opacity: 0.5;
+}
+
+.fullOpacity {
+  opacity: 1;
+}
+
+.correct h1 {
+  color: green;
+}
+
+.incorrect h1 {
+  color: red;
+}
+
+.xIcon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 5%;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+.flex {
+  display: flex;
+  align-items: center;
+}

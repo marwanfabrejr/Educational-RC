@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0,user-scalable=no"
+    />
+    <title>Sphinx Publishing Task</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/utlities.css">
+  </head>
+  <body onload="loadFun()">
+    <div id="preloader"></div>
+    <div id="container">
+      <div class="pageContent">
+        <div class="contentContainer">
+          <!-- Header Starts Here -->
+          <header class="header flex">
+            <div class="question">
+              <h1>Circle, Choose and write.</h1>
+            </div>
+            <div class="box" onclick="showPhoto()">
+              <div class="pointer">
+                <img src="img/resourse_icon.png" />
+              </div>
+              
+              </div>
+              <div class="box right" onclick="showHelp()">
+              <div class="pointer">
+                <img src="img/help_icon.png" />
+            </div>
+          </header>
+          <!-- Header Ends Here -->
+          <!-- Content Starts Here -->
+          <section class="sectionContainer">
+              <div class="sectionBackground"></div>
+              <div class="sectionContent">
+                  <div class="sliderContainer">
+                      <div class="slide activeSlide" id='slide1'>
+                          <img src="img/1.png">
+                          <div class="questionOne">
+                            <h1>What's <span onclick="correct1Show()">this</span>   /   <span onclick="incorrect1Show()">that</span> ?</h1> <div class="correct" id='correct1'><h1>✔</h1></div>
+                          <div class="incorrect" id='incorrect1'><h1>✗</h1></div>
+                        </div>
+                          
+                          <div class="questionTwo">
+                              <h1><span onclick="correct2Show()">It's</span>   /   <span onclick="incorrect2Show()">They're</span> an orange school bag.</h1> <div class="correct" id='correct2'><h1>✔</h1></div>
+                          <div class="incorrect" id='incorrect2'><h1>✗</h1></div>
+                          </div>
+                      </div>
+                      <div class="slide nextSlide" id='slide2' >
+                          <img src="img/2.png">
+                          <div class="questionOne">
+                            <h1>What are <span onclick="incorrect3Show()">these</span>   /   <span onclick="correct3Show()">those</span> ?</h1> <div class="correct" id='correct3'><h1>✔</h1></div>
+                          <div class="incorrect" id='incorrect3'><h1>✗</h1></div>
+                        </div>
+                          
+                          <div class="questionTwo">
+                              <h1><span onclick="incorrect4Show()">It's</span>   /   <span onclick="correct4Show()">They're</span> green pens.</h1> <div class="correct" id='correct4'><h1>✔</h1></div>
+                          <div class="incorrect" id='incorrect4'><h1>✗</h1></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="sectionContent" id='dummyPhoto'>
+                <img class="dummyImg" src="img/dummy.jpg">
+                <img class="xIcon" src="img/close_icon.png" onclick="closePhoto()">
+              </div>
+              <div class="sectionContent" id='help'>
+                <h1>Help contents goes here.</h1>
+                <img class="xIcon" src="img/close_icon.png" onclick="closeHelp()">
+              </div>
+          </section>
+          <!-- Content Ends Here -->
+          <!-- Footer Starts Here -->
+          <footer class="footer flex">
+              <div class="box" onclick="replay()">
+                  <div class="pointer">
+                      <img src="img/replay_icon.png">
+                  </div>
+              </div>
+              <div class="space"></div>
+              <div class="box" onclick="reload()">
+                  <div class="pointer">
+                      <img src="img/reload_icon.png" >
+                  </div>
+              </div>
+              <div class="specialBox" id='showAns' onclick="showAnswers()">
+                  <div class="pointer">
+                      <img src="img/showAns_icon.png">
+                  </div>
+              </div>
+              <div class="box halfOpacity" id="prev" onclick="prevSlide()">
+                  <div class="noPointer">
+                      <img src="img/back_icon.png">
+                  </div>
+
+              </div>
+              <div class="pageCounter">
+                  <div class="counter"><span id="counter">1</span> of 2</div>
+              </div>
+              <div class="box fullOpacity" id="next" onclick="nextSlide()" >
+                  <div class="pointer">
+                      <img src="img/next_icon.png">
+                  </div>
+              </div>
+          </footer>
+          <!-- Footer Ends Here -->
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
